@@ -40,9 +40,16 @@ hf download Qwen/Qwen3-0.6B \
   --local-dir "$MP3_BASE_MODEL"
 ```
 
-Place the evaluated LoRA's `adapter_config.json` and
-`adapter_model.safetensors` in `$MP3_ADAPTER_DIR`. The adapter is distributed
-separately. The evaluated adapter weights have this SHA-256 digest.
+Download the evaluated LoRA from its pinned Hugging Face revision.
+
+```bash
+hf download Fengqinfeng/7506_mp3 \
+  --revision 5fc29cb0839b73a89a2ea29abba4e97ff6782f18 \
+  --include adapter_config.json adapter_model.safetensors \
+  --local-dir "$MP3_ADAPTER_DIR"
+```
+
+The evaluated adapter weights have this SHA-256 digest.
 
 ```text
 1a09a5691f5cbee9375b781b296a2a7096f84c4d7701a014c364152de0e6b64c
