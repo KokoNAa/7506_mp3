@@ -1,0 +1,11 @@
+/.env
+/.venv/
+/MP3_SQL_student_package/
+/adapter/
+/model/
+/outputs/
+__pycache__/
+*.py[cod]
+*.safetensors
+*.zip
+.DS_Store
